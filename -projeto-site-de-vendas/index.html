@@ -6,43 +6,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </head>
 <body>
     <header id="menu-principal">
-        <div class="header-1">
-
-            <h1>Moda Arte</h1>
-            <input type="search" name="pesquisar" id="navpes"><input type="button" value="pesquisar">
-            <p>Onde você encontra preço baixo de verdade!</p>
-             
-        </div> 
-        <nav id="nav2">
-            <a href="">HOME</a>
-            <a href="">PROMOÇÕES</a>
-            <a href="">NOVIDADES</a>
-            <a href="">MASCULINO</a>
-            <a href="">FEMININO</a>
-        </nav>
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand">E-commerce</a>
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="O que você está procurando" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </nav>
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
     </header>
     
-    <main>
-        
-        <article>
-            <div class="aba1">
-                <p>lugar para as camisas</p>
+   <section class="section-1">
+        <div class="row">
+            <div class="col-6">
+                <div class="title text-center" >
+                    <h1 class="section__title">Camisas</h1>
+                    <span class="section__subtitle">Personalize a sua escolha </span>
+                </div>
             </div>
-            <div class="aba2">
-                <p>luugar para  as calças</p>
+            <div class="col-6">
+                <div class="img-home">
+                    <img src="img/camisa-do-psg-para-a-temporada-20212022-1629495166345_v2_300x300.jpg.webp" alt="imagem do modelo" class="ney">
+                </div>
             </div>
-            <div class="aba3">
-                <p>lugar para os tênis</p>
+        </div>
+   </section>
+   <section class="section-2">
+        <div class="row">
+            <div class="col-12">    
+                <h1 class="section__title">Produtos</h1>
             </div>
-            <div class="aba4">
-                <p>lugar para as blusas</p>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <div class="produtos">
+                    <div class="img">
+                        <img src="img/768978_01.png" alt="" class="img-produtos">
+                    </div>
+                    <div class="description">
+                        <h2 class="valor">R$ 99,99</h2>
+                        <span class="nota">Camisa do Palmeiras Oficial</span>
+                    </div>
+                </div>
             </div>
-        </article>
-        
-    </main>
+            <div class="col-3">
+                <div class="produto">
+                    <div class="img">
+                        <img src="img/img-corinthias.jpg" alt="" class="img-produtos">
+                    </div>
+                    <div class="description">
+                        <h2 class="valor">R$ 99,99</h2>
+                        <span class="nota">Camisa do Corinthias Oficial</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="produto">
+                    <div class="img">
+                        <img src="img/img-saopaulo.jpg" alt="" class="img-produtos">
+                    </div>
+                    <div class="description">
+                        <h2 class="valor">R$ 99,99</h2>
+                        <span class="nota">Camisa do São Paulo Oficial</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="produto">
+                    <div class="img">
+                        <img src="img/img-santos.png" alt="" class="img-produtos">
+                    </div>
+                    <div class="description">
+                        <h2 class="valor">R$ 99,99</h2>
+                        <span class="nota">Camisa do Santos Oficial</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+   </section>
     <footer>
         <p>Criado por <strong>Vinicios Lima</strong> e <strong>Richard Lima</strong></p>
     </footer>
